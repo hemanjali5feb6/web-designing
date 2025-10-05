@@ -1,0 +1,31 @@
+﻿<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<style>
+.colorful{
+	background:linear-gradient(135deg,orange,pink,purple,aqua);
+	color:gray;
+	padding:30px
+	font-family:georgia;
+}
+.dark{
+	background-color:#222;
+	color:pink;
+	padding:20px;
+	font-family:"Courier New";
+}
+</style>
+<body ng-app="">
+<p>CHOOSE A THEME:</p>			
+<select ng-model="theme='light">
+	<option value="dark">dark</option>
+	<option value="colorful">colorful</option>
+	</select>
+	<div ng-class="theme">
+	<h1>This is my home and life!</h1>
+	<p>This is the {{theme}}theme.</p>
+	</div>
+	</body>
+	</html>
+	
+	
+
