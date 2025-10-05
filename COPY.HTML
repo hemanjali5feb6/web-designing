@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html ng-app="">
+<head>
+  <title>Copy Counter</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-init="count=0">
+
+  <input type="text" 
+         value="Copy this text" 
+         ng-copy="count = count + 1">
+
+  <p>No. of Copies: {{count}}</p>
+
+</body>
+</html>
