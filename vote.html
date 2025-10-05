@@ -1,0 +1,20 @@
+﻿<html>
+	<head>
+	<script>
+	function test()
+	{
+	var n;
+	
+	n=parseInt(document.getElementById("t1").value);
+			if(n>=18)
+					document.writeln("Eligible to vote");
+			else
+					document.writeln("Not Eligible to vote");
+	}
+</script>
+	</head>
+	<body>
+	Enter Age<input id="t1"><br>
+	<button onclick="test()">Check</button>
+	</body>
+	</html>
