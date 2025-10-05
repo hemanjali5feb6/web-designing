@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+    <script>
+    function area() {
+        var l, b, ar;
+        l = parseFloat(document.getElementById("t1").value) || 0;
+        b = parseFloat(document.getElementById("t2").value) || 0;
+        ar = l * b;
+        document.getElementById("t3").value = ar;
+    }
+
+    function perimeter() {
+        var l, b, per;
+        l = parseFloat(document.getElementById("t1").value) || 0;
+        b = parseFloat(document.getElementById("t2").value) || 0;
+        per = 2 * (l + b);
+        document.getElementById("t3").value = per;
+    }
+    </script>
+</head>
+<body>
+    Enter Length: <input type="number" id="t1"><br><br>
+    Enter Breadth: <input type="number" id="t2"><br><br>
+
+    <button onclick="area()">Find Area</button>
+    <button onclick="perimeter()">Find Perimeter</button><br><br>
+
+    Result: <input type="text" id="t3" readonly>
+</body>
+</html>
