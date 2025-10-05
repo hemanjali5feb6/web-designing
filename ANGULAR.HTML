@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html ng-app="">
+<head>
+  <title>Like / Dislike</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-init="count=0; res=0">
+  <p>Like:</p>
+  <button ng-click="count = count + 1">YES</button>
+  
+  <p>Dislike:</p>
+  <button ng-click="res = res + 1">YES</button>
+  
+  <p>No of Likes: {{count}}</p>
+  <p>No of DisLikes: {{res}}</p>
+</body>
+</html>
