@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<style>
+.colorful {
+    background: linear-gradient(135deg, orange, pink, purple, aqua);
+    color: gray;
+    padding: 30px;
+    font-family: Georgia;
+}
+.dark {
+    background-color: #222;
+    color: pink;
+    padding: 20px;
+    font-family: "Courier New";
+}
+</style>
+</head>
+<body ng-app="">
+  <p>CHOOSE A THEME:</p>
+
+  <!-- Dropdown -->
+  <select ng-model="theme" ng-init="theme='dark'">
+    <option value="dark">Dark</option>
+    <option value="colorful">Colorful</option>
+  </select>
+
+  <!-- Theme Div -->
+  <div ng-class="theme" style="margin-top:20px;">
+    <h1>This is my home and life!</h1>
+    <p>This is the {{theme}} theme.</p>
+  </div>
+</body>
+</html>	
+
