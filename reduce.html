@@ -1,0 +1,17 @@
+﻿
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+const numbers = [100, 30, 15];
+document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+
+function myFunc(total, num)
+{
+  return total + num;
+}
+</script>
+
+</body>
+</html>
