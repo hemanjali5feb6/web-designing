@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<body>
+<p id="demo"></p>
+<script>
+class  Avg
+{
+ constructor(a,b,c)
+ {
+ this.a=a;
+ this.b=b;
+ this.c=c;
+ }
+ sum() {
+ return this.a+this.b+this.c;
+ 
+ average() {
+  return (this.a+this.b+this.c)/3;
+ }
+}
+const myAvg = new Avg(23,34,45);
+document.getElementById("demo").innerHTML = 
+"Sum =" +myAvg.sum() + "<br>Average = "+myAvg.average();
+
+
+</script>
+
+</body>
+
+</html>
+
