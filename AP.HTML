@@ -1,0 +1,47 @@
+﻿<html>
+	<head>
+		<script>
+		function add()
+		{
+			var a,b,c;
+			a=parseInt(document.getElementById("t1").value);
+			b=parseInt(document.getElementById("t2").value);
+			c=a+b;
+			document.getElementById("t3").value=c;
+		}
+		function sub()
+		{
+			var a,b,c;
+			a=parseInt(document.getElementById("t1").value);
+			b=parseInt(document.getElementById("t2").value);
+			c=a-b;
+			document.getElementById("t3").value=c;
+		}
+		function multiply()
+		{
+			var a,b,c;
+			a=parseInt(document.getElementById("t1").value);
+			b=parseInt(document.getElementById("t2").value);
+			c=a*b;
+			document.getElementById("t3").value=c;
+		}
+		function divide()
+		{
+			var a,b,c;
+			a=parseInt(document.getElementById("t1").value);
+			b=parseInt(document.getElementById("t2").value);
+			c=a/b;
+			document.getElementById("t3").value=c;
+		}
+		</script>
+	</head>
+	<body>
+		First Number<input id="t1"><br>
+		Second Number<input id="t2"><br>
+		<button onclick="add()">Add</button>
+		<button onclick="sub()">Subtract</button>
+		<button onclick="multiply()">Multiply</button>
+		<button onclick="divide()">Divide</button><br>
+		Result:<input id="t3">
+	</body>
+</html>
