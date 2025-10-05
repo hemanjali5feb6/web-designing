@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<body>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+class Car
+{
+	constructor(name,year)
+	{
+	this.name = name;
+	this.year = year;
+	}
+}
+	const myCar1 = new Car("Ford",2014);
+	const myCar2 = new Car("ALTO",2019);
+document.getElementById("demo1").innerHTML = myCar1.name;
+document.getElementById("demo2").innerHTML = myCar1.year;
+</script>
+</body>
+</html>
