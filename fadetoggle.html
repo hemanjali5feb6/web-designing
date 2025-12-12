@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(2000);
+  });
+});
+</script>
+
+</head>
+<body>
+
+<button>Click to fade out/in boxes</button><br><br>
+
+<div id="div1" style="display:none; background-color:blue; padding:10px;">
+  <img src="../Pictures/images%20(1).jpeg" height="80" width="80">
+</div>
+<br>
+
+<div id="div2" style="display:none; background-color:green; padding:10px;">
+  <img src="../Pictures/download%20(2).jpeg" height="80" width="80">
+</div>
+<br>
+
+<div id="div3" style="display:none; background-color:red; padding:10px;">
+  <img src="../Pictures/Saved%20Pictures/images.jpeg" height="80" width="80">
+</div>
+
+</body>
+</html>

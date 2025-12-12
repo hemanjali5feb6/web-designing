@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+    $("button").click(function() {
+
+        $("#div1").fadeOut("slow", function() {
+
+            $("#div2").fadeOut(3000, function() {
+
+                $("#div3").fadeOut(2000);  
+                
+    });
+
+});
+</script>
+</head>
+
+<body>
+
+<button>Click to fade out the boxes</button><br><br>
+
+<div id="div1" style="display:block;">
+    <img src="images.jpg" width="70" height="70">
+</div>
+<br>
+
+<div id="div2" style="display:block;">
+    <img src="HD-wallpaper-cute-baby-animals-labrador-retriever-dog-running-animal-cute-running-puppy-thumbnail.jpg"
+         width="70" height="70">
+</div>
+<br>
+
+<div id="div3" style="display:block;">
+    <img src="tiger.jpg" width="70" height="70">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $("button").click(function() {
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(2000);
+    });
+});
+</script>
+</head>
+
+<body>
+
+<p>Working fade images with different style of parameters</p>
+
+<button>Click to fade in boxes</button><br><br>
+
+<div id="div1" style="display:none;">
+    <img src="../Documents/My%20Web%20Sites/images.jpg" width="80" height="80">
+</div>
+<br>
+
+<div id="div2" style="display:none;">
+    <img src="../Pictures/dog.jpg" width="80" height="80">
+</div>
+<br>
+
+<div id="div3" style="display:none;">
+    <img src="../Pictures/vodafone%20dog.jpg" width="80" height="80">
+</div>
+
+</body>
+</html>

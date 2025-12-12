@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+  $(".btn1").click(function(){
+    $("p, img").slideUp();  
+      });
+
+  $(".btn2").click(function(){
+    $("p, img").slideDown(); 
+  });
+
+});
+</script>
+
+</head>
+
+<body>
+
+<p>both the images.</p>
+
+<img src="../Pictures/Saved%20Pictures/pexels-hazardos-1535288.jpg" height="60px" width="60px">
+<img src="../Pictures/images%20(1).jpeg" height="60px" width="60px">
+
+<br><br>
+
+<button class="btn1">Slide up</button>
+<button class="btn2">Slide down</button>
+
+</body>
+</html>
